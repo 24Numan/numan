@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice1</title>
+    <!-- css style is added here -->
+    <style>
+      /* This is for header */
+      body {
+        background-color: #fff0f5;
+      }
+      h2 {
+        text-align: center;
+        font-size: 5rem;
+        color: salmon;
+        background-color: black;
+        border: 3px dotted white;
+        font-family: "Pangolin", cursive;
+        margin-top: 10px;
+      }
+      #img1 {
+        height: 400px;
+        width: 400px;
+        float: left;
+        position: relative;
+        bottom: 50px;
+        margin-left: 20%;
+        border-radius: 15%;
+      }
+      #div2 {
+        font-size: 1.5rem;
+        clear: both;
+        font-family: "Lobster", cursive;
+        text-align: justify;
+        margin-left: 5%;
+      }
+
+      p {
+        font-size: 2rem;
+        color: red;
+        margin-left: 30px;
+        margin-top: 50px;
+      }
+
+      /* here we made a class for coloring name,rollno,etc in one go*/
+      .cl {
+        color: darkslategray;
+      }
+
+      #M {
+        color: darkred;
+      }
+
+      #F {
+        color: darkblue;
+      }
+
+      .img {
+        border-radius: 5%;
+        border: 4px solid black;
+      }
+
+      .site {
+        color: white;
+        background-color: black;
+        border: 1px dotted white;
+        margin-left: 60px;
+        font-size: 1.5rem;
+      }
+
+      .button {
+        color: darkviolet;
+      }
+      .div-img {
+        position: relative;
+        left: 3%;
+      }
+      #img01 {
+        float: left;
+        margin-bottom: 2%;
+      }
+      #div4 {
+        clear: both;
+      }
+      #div3 {
+        margin-bottom: 5%;
+      }
+      #img02 {
+        float: left;
+        margin-bottom: 2%;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <form action="backend.php">
+      <div id="div1">
+        <h2>This is Practice for using HTML!</h2>
+        <img
+          id="img1"
+          src="https://img.freepik.com/free-vector/registration-form-template-with-flat-design_23-2147971971.jpg?w=740&t=st=1684651533~exp=1684652133~hmac=5a5c777188989f2aa9b21798308813133840347199d773ed88325566617da78d"
+          alt="form image"
+        />
+        <div
+          style="
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            float: left;
+            border-radius: 50%;
+            position: relative;
+            top: 40px;
+            margin-left: 2%;
+          "
+        >
+          <p>This is our First <span style="font-weight: bolder">Form</span></p>
+        </div>
+        <hr style="clear: both; margin-bottom: 40px" />
+      </div>
+      <!-- <label for="text" id="h1">hell</label>
+          <input type="text" id="text"> -->
+
+      <div id="div2">
+        <img
+          style="
+            height: 400px;
+            width: 400px;
+            float: right;
+            position: relative;
+            right: 35%;
+            top: 15%;
+          "
+          src="https://www.shutterstock.com/image-vector/fill-me-600w-112102154.jpg"
+          alt="fill me up"
+        />
+        <div>
+          <label for="Name" class="cl">NAME</label>
+          <input type="text" name="Name" id="Name" />
+        </div>
+        <br />
+        <div>
+          <label class="cl" for="roll">ROLL NUMBER</label>
+          <input type="number" name="roll" id="roll" />
+        </div>
+        <br />
+        <div>
+          <span class="cl">GENDER:&nbsp;&nbsp;&nbsp; </span>
+          <label id="M" for="male">MALE</label>
+          <input type="radio" name="male" id="male" />
+          <label id="F" for="female">FEMALE</label>
+          <input type="radio" name="male" id="female" />
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="cbox" id="cbox" checked />
+          <label class="cl" for="cbox">Yes, I am above 18.</label>
+        </div>
+        <br />
+        <div>
+          <label class="cl" for="sem">Select your Semister</label>
+          <select name="sem" id="sem">
+            <option value="1st Sem">1st Sem</option>
+            <option value="2nd Sem">2nd Sem</option>
+            <option value="3rd Sem">3rd Sem</option>
+            <option value="4th Sem">4th Sem</option>
+            <option value="5th Sem">5th Sem</option>
+            <option selected value="6th Sem">6th Sem</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label class="cl" for="dob">Enter you DOB</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <br />
+        <div>
+          <label class="cl" for="pass">Enter your password</label>
+          <input type="password" name="pass" id="pass" />
+        </div>
+        <br />
+        <div>
+          <input class="button" type="submit" value="submit" />
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <input class="button" type="reset" value="reset" />
+        </div>
+      </div>
+      <hr />
+    </form>
+    <footer>
+      <p
+        style="
+          font-weight: bolder;
+          font-size: 3rem;
+          text-align: center;
+          margin-top: 25px;
+        "
+      >
+        Some other Sites
+      </p>
+      <div class="div-img" id="div3">
+        <img
+          class="img"
+          id="img01"
+          src="https://a57.foxnews.com/a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/640/320/1862/1048/amazon-logo-reuters.jpg?ve=1&tl=1?ve=1&tl=1"
+          alt="This is Amazon.in"
+          width="250"
+          height="200"
+        /><br />
+        <a class="site" href="https://www.amazon.in" target="_blank">
+          Click here to reach Amazon.in</a
+        >
+      </div>
+      <hr style="clear: both" />
+      <div class="div-img" id="div4">
+        <img
+          class="img"
+          id="img02"
+          src="https://th.bing.com/th/id/R.da0b8115e8501833db392a956911e5ce?rik=6n%2fYzHRZfMSIaw&riu=http%3a%2f%2fstatic3.businessinsider.com%2fimage%2f59a59a8d79bbfd1d008b601a-1190-625%2fyoutube-just-made-the-biggest-change-to-its-logo-in-history.jpg&ehk=PuTPyAMizXUm31FlKp1eHWXpA2asU37PEpW6xav7qd4%3d&risl=&pid=ImgRaw&r=0"
+          alt="This is YOUTUBE"
+          width="250"
+          height="150"
+        /><br />
+
+        <a class="site" href="https://www.youtube.com" target="_blank"
+          >Click here to reach YOUTUBE!!</a
+        >
+      </div>
+      <hr style="clear: both" />
+      <br />
+    </footer>
+  </body>
+</html>
